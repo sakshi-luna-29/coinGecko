@@ -17,8 +17,9 @@ class CreateCoinsTable extends Migration
             $table->id();
             $table->string('symbol')->charset('utf8mb4')->collation('utf8mb4_unicode_ci');
             $table->string('name')->charset('utf8mb4')->collation('utf8mb4_unicode_ci');
-            $table->json('platform')->charset('utf8mb4')->collation('utf8mb4_unicode_ci');
-
+            $table->text('platform')->charset('utf8mb4')->collation('utf8mb4_unicode_ci');
+//             $table->string('created_at');
+//             $table->string('updated_at');
 
             $table->timestamps();
         });
